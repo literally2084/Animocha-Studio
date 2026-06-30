@@ -1,0 +1,118 @@
+:root {
+    --user-color: red; 
+}
+
+* {
+    scroll-behavior: smooth;
+}
+
+body {
+    background-color: black;
+}
+
+.center {
+    text-align: center;
+}
+
+.center2 {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+@font-face {
+    font-family: "DancingScript";
+    src: url("../assets/fonts/DancingScript-Regular.ttf");
+}
+
+@font-face {
+    font-family: "GlacialIndifferenceB";
+    src: url("../assets/fonts/GlacialIndifference-Bold.otf");
+}
+
+@font-face {
+    font-family: "GlacialIndifference";
+    src: url("../assets/fonts/GlacialIndifference-Regular.otf");
+}
+
+@font-face {
+    font-family: "DancingScript-SemiBold";
+    src: url("../assets/fonts/DancingScript-SemiBold.ttf");
+}
+
+@font-face {
+    font-family: "DancingScript-Bold";
+    src: url("../assets/fonts/DancingScript-Bold.ttf");
+}
+
+img {
+    min-width: 100%;
+    height: auto;
+    display: block;
+}
+
+@media screen and (min-width: 1000px) {
+    body {
+        padding: 40px;
+    }
+    img {
+        min-width: 50%;
+        height: auto;
+        display: block;
+    }
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: "DancingScript-Bold";
+    color: var(--user-color);
+}
+
+p {
+    font-family: "DancingScript";
+    color: var(--user-color);
+}
+
+.info {
+    font-family: "GlacialIndifference";
+}
+
+.card {
+    background: rgb(0, 0, 0);
+    padding: 30px;
+    border-radius: 8px;
+    border-top: 5px solid var(--user-color); 
+    text-align: center;
+}
+
+.btn {
+    display: block;
+    margin: 20px auto 0;
+    padding: 10px 20px;
+    border: none;
+    color: rgb(0, 0, 0);
+    border-radius: 4px;
+    cursor: pointer;
+    background-color: var(--user-color); 
+    font-family: "GlacialIndifferenceB";
+}
+
+.bg {
+    position: relative;
+    isolation: isolate;
+    padding: 40px;
+}
+
+.bg::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    z-index: -1;
+    height: 45vh;
+
+    background-image: url("../assets/img/icons/blk-esp.png");
+    background-size: auto;
+    background-position: center;
+    background-repeat: repeat;
+    background-attachment: fixed;
+    opacity: 0.4;
+}
