@@ -51,6 +51,27 @@ img {
     display: block;
 }
 
+.bg {
+    position: relative;
+    isolation: isolate;
+    padding: 40px;
+}
+
+.bg::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    z-index: -1;
+    height: 55vh;
+
+    background-image: url("../assets/img/icons/blk-esp.png");
+    background-size: auto;
+    background-position: center;
+    background-repeat: repeat;
+    background-attachment: fixed;
+    opacity: 0.4;
+}
+
 @media screen and (min-width: 1000px) {
     body {
         padding: 40px;
@@ -59,6 +80,9 @@ img {
         min-width: 50%;
         height: auto;
         display: block;
+    }
+    .bg::before {
+        min-height: 85vh;
     }
 }
 
@@ -94,25 +118,4 @@ p {
     cursor: pointer;
     background-color: var(--user-color); 
     font-family: "GlacialIndifferenceB";
-}
-
-.bg {
-    position: relative;
-    isolation: isolate;
-    padding: 40px;
-}
-
-.bg::before {
-    content: "";
-    position: absolute;
-    inset: 0;
-    z-index: -1;
-    height: 45vh;
-
-    background-image: url("../assets/img/icons/blk-esp.png");
-    background-size: auto;
-    background-position: center;
-    background-repeat: repeat;
-    background-attachment: fixed;
-    opacity: 0.4;
 }
