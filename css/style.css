@@ -62,7 +62,7 @@ img {
     position: absolute;
     inset: 0;
     z-index: -1;
-    height: 60vh;
+    height: 50vh;
 
     background-image: url("../assets/img/icons/blk-esp.png");
     background-size: auto;
