@@ -62,7 +62,7 @@ img {
     position: absolute;
     inset: 0;
     z-index: -1;
-    height: 50vh;
+    height: 40vh;
 
     background-image: url("../assets/img/icons/blk-esp.png");
     background-size: auto;
@@ -82,7 +82,7 @@ img {
         display: block;
     }
     .bg::before {
-        min-height: 80vh;
+        min-height: 60vh;
     }
 }
 
